@@ -60,15 +60,15 @@ const Contact = () => {
             {/* Quick Links */}
             <Card className="card-gradient border-0 shadow-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-4 text-gradient-accent">Quick Actions</h3>
+                <h3 className="text-lg font-semibold mb-4 text-gradient-accent">Ready to Start?</h3>
                 <div className="space-y-3">
                   <Button className="w-full btn-hero" size="lg">
                     <MessageSquare className="w-5 h-5 mr-2" />
-                    Start WhatsApp Chat
+                    Chat on WhatsApp Now
                   </Button>
                   <Button variant="outline" className="w-full btn-outline-glow" size="lg">
                     <Mail className="w-5 h-5 mr-2" />
-                    Send Email
+                    Send Project Details
                   </Button>
                 </div>
               </CardContent>
@@ -119,11 +119,11 @@ const Contact = () => {
 
               <Button className="w-full btn-hero" size="lg">
                 <Send className="w-5 h-5 mr-2" />
-                Send Project Details
+                Get My Free Quote
               </Button>
 
               <p className="text-sm text-muted-foreground text-center">
-                We'll respond within 24 hours with a detailed proposal and timeline
+                We'll send you a detailed proposal within 24 hours
               </p>
             </CardContent>
           </Card>
@@ -136,13 +136,13 @@ const Contact = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10"></div>
               <div className="relative z-10">
                 <h3 className="text-3xl font-bold text-gradient-primary mb-4">
-                  Ready to Transform Your Business?
+                  Ready to 10X Your Business?
                 </h3>
                 <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Join 50+ successful businesses that trust TechMagnet Solutions for their digital transformation
+                  Join 50+ successful businesses that chose TechMagnet Solutions for game-changing results
                 </p>
                 <div className="text-2xl font-bold text-gradient-accent animate-pulse">
-                  Let's Talk About Your Project! 🚀
+                  Book Your Strategy Call Today! 🚀
                 </div>
               </div>
             </CardContent>

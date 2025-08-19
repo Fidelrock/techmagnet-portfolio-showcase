@@ -135,7 +135,7 @@ const Portfolio = () => {
                     className="flex-1 btn-outline-glow"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    View Live
+                    View Case Study
                   </Button>
                   <Button 
                     variant="ghost" 
@@ -154,14 +154,14 @@ const Portfolio = () => {
         <div className="text-center mt-16 animate-fade-in">
           <div className="inline-block p-8 rounded-2xl card-gradient border-0 shadow-2xl">
             <h3 className="text-2xl font-bold text-gradient-secondary mb-4">
-              Explore More Projects
+              Want Similar Results?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Discover our complete portfolio and open-source contributions
+              See how we can build a custom solution that drives your business growth
             </p>
             <Button className="btn-hero">
               <Github className="w-5 h-5 mr-2" />
-              Visit Our GitHub
+              Explore All Projects
             </Button>
           </div>
         </div>

@@ -52,7 +52,7 @@ const Navigation = () => {
               </a>
             ))}
             <Button className="btn-hero">
-              Get Started
+              Get Free Quote
             </Button>
           </div>
 
@@ -80,7 +80,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button className="w-full btn-hero mt-4">
-                Get Started
+                Get Free Quote
               </Button>
             </div>
           </div>

@@ -41,12 +41,12 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button className="btn-hero group">
-              Let's Build Your Project
+              Start Your Project Today
               <Rocket className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <Button variant="outline" className="btn-outline-glow group">
-              View Our Work
+              See Our Success Stories
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

@@ -99,11 +99,11 @@ const Services = () => {
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-in">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to transform your business with our solutions?
+            Ready to transform your business with cutting-edge technology?
           </p>
           <div className="inline-block">
             <div className="text-2xl font-bold text-gradient-accent animate-pulse">
-              Let's discuss your project! 🚀
+              Get Your Free Consultation Now! 🚀
             </div>
           </div>
         </div>
