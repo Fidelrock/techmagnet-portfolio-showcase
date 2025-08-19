@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import techmagnetLogo from "@/assets/techmagnet-logo.png";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,15 +55,18 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button 
-              className="btn-hero"
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                contactSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Get Free Quote
-            </Button>
+            <div className="flex items-center space-x-3">
+              <ThemeToggle />
+              <Button 
+                className="btn-hero"
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  contactSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Get Free Quote
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,16 +92,19 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button 
-                className="w-full btn-hero mt-4"
-                onClick={() => {
-                  const contactSection = document.getElementById('contact');
-                  contactSection?.scrollIntoView({ behavior: 'smooth' });
-                  setIsOpen(false);
-                }}
-              >
-                Get Free Quote
-              </Button>
+              <div className="flex items-center justify-between pt-4">
+                <ThemeToggle />
+                <Button 
+                  className="flex-1 btn-hero ml-4"
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                    setIsOpen(false);
+                  }}
+                >
+                  Get Free Quote
+                </Button>
+              </div>
             </div>
           </div>
         )}
