@@ -1,16 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Rocket } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { useTheme } from "next-themes";
+import heroImageDark from "@/assets/hero-bg.jpg";
+import heroImageLight from "@/assets/hero-bg-light.jpg";
 
 const Hero = () => {
+  const { theme } = useTheme();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
+          src={theme === "light" ? heroImageLight : heroImageDark} 
           alt="Tech background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-opacity duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/95"></div>
       </div>
