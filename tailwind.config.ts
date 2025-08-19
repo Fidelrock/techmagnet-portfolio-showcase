@@ -63,6 +63,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			boxShadow: {
+				'glow': '0 0 30px hsl(var(--primary) / 0.3)',
+				'card': '0 8px 32px hsl(220 18% 4% / 0.4)',
+				'elevated': '0 16px 64px hsl(220 18% 4% / 0.6)'
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
