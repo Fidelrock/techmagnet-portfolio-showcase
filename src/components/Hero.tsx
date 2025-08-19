@@ -40,12 +40,25 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="btn-hero group">
+            <Button 
+              className="btn-hero group"
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Start Your Project Today
               <Rocket className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button variant="outline" className="btn-outline-glow group">
+            <Button 
+              variant="outline" 
+              className="btn-outline-glow group"
+              onClick={() => {
+                const portfolioSection = document.getElementById('portfolio');
+                portfolioSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               See Our Success Stories
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>

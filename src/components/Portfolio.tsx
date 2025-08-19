@@ -133,6 +133,10 @@ const Portfolio = () => {
                     variant="outline" 
                     size="sm" 
                     className="flex-1 btn-outline-glow"
+                    onClick={() => {
+                      const contactSection = document.getElementById('contact');
+                      contactSection?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Case Study
@@ -141,6 +145,9 @@ const Portfolio = () => {
                     variant="ghost" 
                     size="sm"
                     className="hover:bg-primary/10 hover:text-primary"
+                    onClick={() => {
+                      window.open('https://github.com/techmagnet-solutions', '_blank');
+                    }}
                   >
                     <Github className="w-4 h-4" />
                   </Button>
@@ -159,7 +166,12 @@ const Portfolio = () => {
             <p className="text-muted-foreground mb-6">
               See how we can build a custom solution that drives your business growth
             </p>
-            <Button className="btn-hero">
+            <Button 
+              className="btn-hero"
+              onClick={() => {
+                window.open('https://github.com/techmagnet-solutions', '_blank');
+              }}
+            >
               <Github className="w-5 h-5 mr-2" />
               Explore All Projects
             </Button>

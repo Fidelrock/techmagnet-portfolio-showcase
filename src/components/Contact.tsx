@@ -62,11 +62,24 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-4 text-gradient-accent">Ready to Start?</h3>
                 <div className="space-y-3">
-                  <Button className="w-full btn-hero" size="lg">
+                  <Button 
+                    className="w-full btn-hero" 
+                    size="lg"
+                    onClick={() => {
+                      window.open('https://wa.me/254746906860?text=Hi! I would like to discuss my project requirements with TechMagnet Solutions.', '_blank');
+                    }}
+                  >
                     <MessageSquare className="w-5 h-5 mr-2" />
                     Chat on WhatsApp Now
                   </Button>
-                  <Button variant="outline" className="w-full btn-outline-glow" size="lg">
+                  <Button 
+                    variant="outline" 
+                    className="w-full btn-outline-glow" 
+                    size="lg"
+                    onClick={() => {
+                      window.open('mailto:fidelisodhiambo254@gmail.com?subject=Project Inquiry - TechMagnet Solutions&body=Hi TechMagnet Solutions,%0D%0A%0D%0AI would like to discuss my project requirements.%0D%0A%0D%0AProject Type: %0D%0ATimeline: %0D%0ABudget Range: %0D%0ADescription: %0D%0A%0D%0AThank you!', '_blank');
+                    }}
+                  >
                     <Mail className="w-5 h-5 mr-2" />
                     Send Project Details
                   </Button>
@@ -117,7 +130,26 @@ const Contact = () => {
                 />
               </div>
 
-              <Button className="w-full btn-hero" size="lg">
+              <Button 
+                className="w-full btn-hero" 
+                size="lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const form = e.currentTarget.closest('form') || e.currentTarget.closest('[data-form]');
+                  const formData = new FormData();
+                  const inputs = document.querySelectorAll('#contact input, #contact textarea');
+                  let formText = 'Project Inquiry from Website:%0D%0A%0D%0A';
+                  
+                  inputs.forEach((input: any) => {
+                    if (input.placeholder && input.value) {
+                      const label = input.placeholder.replace('Your ', '').replace('your@', '').replace('e.g., ', '');
+                      formText += `${label}: ${input.value}%0D%0A`;
+                    }
+                  });
+                  
+                  window.open(`https://wa.me/254746906860?text=${formText}`, '_blank');
+                }}
+              >
                 <Send className="w-5 h-5 mr-2" />
                 Get My Free Quote
               </Button>

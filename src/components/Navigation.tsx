@@ -51,7 +51,13 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button className="btn-hero">
+            <Button 
+              className="btn-hero"
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Get Free Quote
             </Button>
           </div>
@@ -79,7 +85,14 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button className="w-full btn-hero mt-4">
+              <Button 
+                className="w-full btn-hero mt-4"
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  setIsOpen(false);
+                }}
+              >
                 Get Free Quote
               </Button>
             </div>
