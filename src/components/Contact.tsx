@@ -41,7 +41,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-muted-foreground">fidelisodhiambo254@gmail.com</p>
+                    <p className="text-muted-foreground">techmagnetsolutionslimited@gmail.com</p>
                   </div>
                 </div>
 
@@ -77,7 +77,7 @@ const Contact = () => {
                     className="w-full btn-outline-glow" 
                     size="lg"
                     onClick={() => {
-                      window.open('mailto:fidelisodhiambo254@gmail.com?subject=Project Inquiry - TechMagnet Solutions&body=Hi TechMagnet Solutions,%0D%0A%0D%0AI would like to discuss my project requirements.%0D%0A%0D%0AProject Type: %0D%0ATimeline: %0D%0ABudget Range: %0D%0ADescription: %0D%0A%0D%0AThank you!', '_blank');
+                      window.open('mailto:techmagnetsolutionslimited@gmail.com?subject=Project Inquiry - TechMagnet Solutions&body=Hi TechMagnet Solutions,%0D%0A%0D%0AI would like to discuss my project requirements.%0D%0A%0D%0AProject Type: %0D%0ATimeline: %0D%0ABudget Range: %0D%0ADescription: %0D%0A%0D%0AThank you!', '_blank');
                     }}
                   >
                     <Mail className="w-5 h-5 mr-2" />
